@@ -26,6 +26,7 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+________________________________________
 
 
 I used this GeeksforGeeks site to understand the concept of a divide and conquer function is doing. https://www.geeksforgeeks.org/introduction-to-divide-and-conquer-algorithm/ 
