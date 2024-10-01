@@ -7,7 +7,7 @@ function getSums(a,low, high) {
         return 0;
     }
     //just return, no more sums, reached array of length one.
-    if(high == low) {
+    if(high - low == 1) {
         return a[low];
     }
 
