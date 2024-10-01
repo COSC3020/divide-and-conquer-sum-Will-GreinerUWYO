@@ -13,13 +13,13 @@ function getSums(a,low, high) {
 
     //high - low makes sure we stay within the bounds, divide by three to make thirds.
     const third = Math.floor((high-low)/3);
-    const secondthird = low + third;
-    const thirdthird = secondthird + third;
+    const firstbreak = low + third;
+    const secondbreak = firstbreak + third;
 
     //recursively calls each third to get the thirds and sums of each of the others.
-    const sumfirstThird = getSums(a, low, secondthird);
-    const sumsecondThird = getSums(a,secondthird, thirdthird);
-    const sumthirdThird = getSums(a,thirdthird,high);
+    const sumfirstThird = getSums(a, low, firstbreak);
+    const sumsecondThird = getSums(a,firstbreak, secondbreak);
+    const sumthirdThird = getSums(a,secondbreak,high);
 
     //returns the sum of each third.
     return (sumfirstThird + sumsecondThird + sumthirdThird);
