@@ -1,7 +1,8 @@
 function divideAndConquerSum(a) {
-    return getSums(a,0,a.length());
+    return getSums(a,0,a.length);
 }
 function getSums(a,low, high) {
+    console.log("running");
     //gone through the whole array
     if(high - low <= 0) {
         return 0;
