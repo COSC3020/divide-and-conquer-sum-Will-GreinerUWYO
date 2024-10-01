@@ -18,7 +18,7 @@ function getSums(a,low, high) {
 
     //recursively calls each third to get the thirds and sums of each of the others.
     const sumfirstThird = getSums(a, low, third);
-    const sumsecondThird = getSums(a,secondthird, third);
+    const sumsecondThird = getSums(a,third, secondthird);
     const sumthirdThird = getSums(a,secondthird,high);
 
     //returns the sum of each third.
