@@ -26,9 +26,18 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+We are looking for T(n) = runtime. For our runtime answer, T(n) needs to apply for every n, including the recursive calls.
+Each call of the function is calling itself three times, unless the length of the array is one, in which case it is a constant 1. This gives us 3*n. 
+
+But n is also divided into three parts, firstThird, secondThird, and thirdThird. This means that n is only being called a third at a time. So 3T(n/3) is more accurate for runtime. Each section calls the recursive function T(n/3) and this is called three times per loop, so T(n) = 3T(n/3) is the runtime of the function.
+
 ________________________________________
 
 
 I used this GeeksforGeeks site to understand the concept of a divide and conquer function is doing. https://www.geeksforgeeks.org/introduction-to-divide-and-conquer-algorithm/ 
 
 I talked to Lily Brongo about how to best split up the function into thirds. She also showed me the +1s that help the code run properly. 
+
+I used this stack overflow page to help me understand how to do runtime anlaysis: https://stackoverflow.com/questions/68149506/how-do-i-analyze-the-running-time-of-an-algorithm-in-c 
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
