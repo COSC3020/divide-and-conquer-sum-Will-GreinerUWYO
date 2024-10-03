@@ -31,6 +31,8 @@ Each call of the function is calling itself three times, unless the length of th
 
 But n is also divided into three parts, firstThird, secondThird, and thirdThird. This means that n is only being called a third at a time. So 3T(n/3) is more accurate for runtime. Each section calls the recursive function T(n/3) and this is called three times per loop, so T(n) = 3T(n/3) is the runtime of the function.
 
+The final $\Theta$ complexity is based on the best case situation for this algorithm. Since the only variable is n, the best-case complexity is $\Theta$(n).
+
 ________________________________________
 
 
